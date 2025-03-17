@@ -105,6 +105,7 @@ body{
 }
 .profile-img{
     width: 100px;
+    /* filter: grayscale(1); */
 }
 .name-container{
     justify-self: start;
@@ -160,6 +161,7 @@ body{
     color: white;
     font-size: 14px;
     display: flex;
+    /* flex-direction: column; */
     gap: 2px;
 }
 .up-arrow{
@@ -192,13 +194,14 @@ body{
 .projects-section{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows:auto;
     padding: 20px;
+    gap: 20px;
 }
 .project-container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 5px;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
 }
 /* .display-section{
     
@@ -309,7 +312,9 @@ body{
 }
 .display-image>img{
     /* width: 100%; */
+    filter: grayscale(100%);
     height: auto;
+    border-radius: 25px;
     /* object-fit: fit; */
 }
 
@@ -333,19 +338,41 @@ a{
 
     gap: 4px;
 }
-.underline-box-div{
-    /* animation: box 2s linear 1s 0 normal backwards ; */
-    height: 10%;
-    width: 0%;
+/* .box{
+    width: 50%;
+    height: 1%;
+    background-color: aliceblue;
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: linear;
-    transition-delay: 0s;
-    /* transform: scaleX(0); */
+    transition-delay: 0s; 
 }
-.underline-box-div:hover{
-    /* height: 10%; */
+.box:hover{
     width: 100%;
-    background-color: white;
-    /* transform: scaleX(100) ; */
+    height: 1%;
+    background-color: aliceblue;
 }
+.box:focus{
+    width: 100%;
+    height: 1%;
+    background-color: aliceblue;
+}
+.box::after{
+    width: 100%;
+    height: 1%;
+    background-color: aliceblue;
+} */
+/* #Reactjs{
+    display: flex;
+    flex-direction: column;
+} */
+/* #Reactjs>a{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s; 
+}
+#Reactjs>a:hover{
+    /* background-color: cyan; */
+    border-bottom: 2px solid brown;
+} */
